@@ -29,18 +29,61 @@ function fatorial()
 
 function conversao()
 {
-    let dolar = prompt('Informe o valor do dolar atual');
-    
+    let CotaçãoDolar = '4.80';
+    let valorDolar = prompt('Informe um valor de dolar para a conversão em Reais');
 
-    alert(`O valor em reais é: ${dolar}`);
-    console.log(`O valor em reais é: ${dolar}`);
+    let valorReais = valorDolar*CotaçãoDolar;
+
+    alert(`O valor em reais é: ${valorReais}`);
+    console.log(`O valor em reais é: ${valorReais}`);
 }
 
 // 04) ----------------------
 
+function salaRetangular()
+{
+    let largura = prompt('Informe a largura do perímetro');
+    let altura = prompt('Informe a altura do perímetro');
+
+    let area = largura*altura;
+    let perimetro = 2* (largura*altura);
+
+    alert(`a área é: ${area} e o perímetro é ${perimetro}`);
+    console.log(`a área é: ${area} e o perímetro é ${perimetro}`);
+}
 
 // 05) ----------------------
 
+function salaCircular()
+{
+    let raio = prompt('Informe o raio');
+    let pi = '3.14';
+
+    let area = raio*raio*pi;
+    let perimetro = 2*pi*raio;
+
+    alert(`a área é: ${area} e o perímetro é ${perimetro}`);
+    console.log(`a área é: ${area} e o perímetro é ${perimetro}`);
+}
 
 // 06) ----------------------
+
+function tabuada()
+{
+    let numero = parseInt(prompt('Informe um número para multiplicação:'));
+
+    if (numero >= 1 && numero <= 10) 
+    { 
+        let alerta = '';
+        for (let a = 1; a <= 10; a++) 
+        {
+            let resultado = numero * a;
+
+            console.log(`${numero} x ${a} = ${resultado}`);
+            alerta += `${numero} x ${a} = ${resultado}\n`;
+        }
+        
+        alert(alerta);
+    }
+}
 
